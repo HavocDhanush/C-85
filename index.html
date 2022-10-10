@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body{
-	background-image: url("mars.gif");
-    background-position: center;
-    background-size: cover;
-}
-#myCanvas
-{
-	border-width:10px;
-	background-color: white; 
-	border-style:ridge;
-}
+<html lang="en"><head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-h1,h4
-{
-	color: white !important;
-}
-</style>		
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<title>Moving Rover On</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body onload="add()"> 
-<center>
-<h1>Moving Rover On Mars</h1>
-<canvas id="my_Canvas" width="800" height="600"></canvas>
-<h4>
-	<b class="text-danger">NOTE : </b> IF ROVER IS NOT VISIABLE PRESS ANY ARROW KEY
-</h4>
+<body class="body_background">
 
-</center>
-<script src="main.js">
-</script>
-</body>
-</html>
+    <center>
+<canvas id="myCanvas" width="1000" height="600"></canvas>
+<br> <br>
+
+<input id="color" type="text" placeholder="Enter the color">
+<input id="width" type="text" placeholder="Enter the width ">
+<button onclick="clearCanvas()" id="clearCanvas" type="button">Clear Canvas</button>
+
+
+    </center>
+
+    <script src="main.js"></script>
+    
+
+</body></html>
